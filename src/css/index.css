@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-primary {
+  @apply font-bold uppercase bg-primary text-white shadow shadow-white/30 rounded border border-white/30;
+}
+.button-transparent {
+  @apply font-bold uppercase bg-transparent text-white shadow shadow-white/30 rounded border border-white/30;
+}
+.button-dark {
+  @apply font-bold uppercase bg-transparent text-black shadow shadow-black/30 rounded border border-black/30;
+}
+
+.secondary-heading {
+  @apply text-gray-700 uppercase font-extrabold text-5xl;
+}
+.contact-form {
+  @apply space-y-3 max-w-[700px] mx-auto;
+}
+.contact-form :is(input, textarea):not(input[type="submit"]) {
+  @apply w-full border border-black/30 focus:border-black rounded-[30px] px-6 py-3;
+}
+.contact-form input[type="submit"] {
+  @apply bg-primary text-white w-full sm:w-auto rounded-full px-12 py-3 uppercase font-semibold shadow-md shadow-black/30
+}
